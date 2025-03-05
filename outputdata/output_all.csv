@@ -1,0 +1,260 @@
+"","clean_payer_name","code_type","raw_code","open_plan","hospital_name","setting","hpt_count","hpt_rate","tic_count","tic_min","tic_q1","tic_q2","tic_q3","tic_max","delta","delta_pct"
+"1","aetna","CPT",43239,0,"Montefiore Medical Center","both",4,157.52,NA,NA,NA,NA,NA,NA,NA,NA
+"2","aetna","CPT",43239,0,"Montefiore Medical Center","outpatient",5,1027.27,NA,NA,NA,NA,NA,NA,NA,NA
+"3","aetna","CPT",43239,0,"The Mount Sinai Hospital","outpatient",5,1048.28,NA,NA,NA,NA,NA,NA,NA,NA
+"4","aetna","CPT",43239,1,"Montefiore Medical Center",NA,NA,NA,42,1914.43,5135.16,7220.29,11838.005,27166,NA,NA
+"5","aetna","CPT",43239,1,"NYU Langone","both",4,8124.66,42,1914.43,5135.16,7220.29,11838.005,27166,904.37,0.11131173489106
+"6","aetna","CPT",43239,1,"The Mount Sinai Hospital",NA,NA,NA,42,1914.43,5135.16,7220.29,11838.005,27166,NA,NA
+"7","aetna","CPT",99283,0,"Montefiore Medical Center","both",2,79.79,NA,NA,NA,NA,NA,NA,NA,NA
+"8","aetna","CPT",99283,0,"Montefiore Medical Center","outpatient",5,323.34,NA,NA,NA,NA,NA,NA,NA,NA
+"9","aetna","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,329.95,NA,NA,NA,NA,NA,NA,NA,NA
+"10","aetna","CPT",99283,0,"NYU Langone","both",34,326.6,NA,NA,NA,NA,NA,NA,NA,NA
+"11","aetna","CPT",99283,1,"NYU Langone","both",4,2490,4,2560,3583.5,4607,4793.5,4980,-2117,-0.850200803212851
+"12","aetna","CPT",99283,1,"The Mount Sinai Hospital",NA,NA,NA,4,2560,3583.5,4607,4793.5,4980,NA,NA
+"13","aetna","CPT",99283,1,"Montefiore Medical Center",NA,NA,NA,4,2560,3583.5,4607,4793.5,4980,NA,NA
+"14","aetna","MS-DRG",872,0,"Montefiore Medical Center","inpatient",3,13434.3,NA,NA,NA,NA,NA,NA,NA,NA
+"15","aetna","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",4,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"16","aetna","MS-DRG",872,0,"NYU Langone","inpatient",16,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"17","aetna","MS-DRG",872,1,"NYU Langone","inpatient",2,25883.26,6,8757,10245.75,13365,16815.75,17966,12518.26,0.48364309596241
+"18","aetna","MS-DRG",872,1,"Montefiore Medical Center",NA,NA,NA,6,8757,10245.75,13365,16815.75,17966,NA,NA
+"19","aetna","MS-DRG",872,1,"The Mount Sinai Hospital",NA,NA,NA,6,8757,10245.75,13365,16815.75,17966,NA,NA
+"20","aetna","LOCAL",43239,1,"NYU Langone","both",2,6894.2,NA,NA,NA,NA,NA,NA,NA,NA
+"21","healthfirst","CPT",43239,0,"Montefiore Medical Center","both",8,146.49,NA,NA,NA,NA,NA,NA,NA,NA
+"22","healthfirst","CPT",43239,0,"Montefiore Medical Center","outpatient",8,141.77,NA,NA,NA,NA,NA,NA,NA,NA
+"23","healthfirst","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,127.36,NA,NA,NA,NA,NA,NA,NA,NA
+"24","healthfirst","CPT",99283,0,"Montefiore Medical Center","both",4,72.25,NA,NA,NA,NA,NA,NA,NA,NA
+"25","healthfirst","CPT",99283,0,"Montefiore Medical Center","outpatient",6,71.81,NA,NA,NA,NA,NA,NA,NA,NA
+"26","healthfirst","MS-DRG",872,0,"Montefiore Medical Center","inpatient",3,5699.4,NA,NA,NA,NA,NA,NA,NA,NA
+"27","healthfirst","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,6374.31,NA,NA,NA,NA,NA,NA,NA,NA
+"28","healthfirst","MS-DRG",872,0,"NYU Langone","inpatient",7,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"29","cigna","CPT",43239,0,"Montefiore Medical Center","outpatient",1,5954,NA,NA,NA,NA,NA,NA,NA,NA
+"30","cigna","CPT",43239,0,"Montefiore Medical Center","both",4,841.81,NA,NA,NA,NA,NA,NA,NA,NA
+"31","cigna","CPT",43239,0,"The Mount Sinai Hospital","outpatient",1,4289.89,NA,NA,NA,NA,NA,NA,NA,NA
+"32","cigna","CPT",43239,0,"NYU Langone","both",28,1069,NA,NA,NA,NA,NA,NA,NA,NA
+"33","cigna","CPT",43239,1,"Montefiore Medical Center",NA,NA,NA,4,164,168.6575,170.21,193.9525,265.18,NA,NA
+"34","cigna","CPT",43239,1,"NYU Langone","both",6,6034,4,164,168.6575,170.21,193.9525,265.18,5863.79,0.971791514749751
+"35","cigna","CPT",43239,1,"The Mount Sinai Hospital",NA,NA,NA,4,164,168.6575,170.21,193.9525,265.18,NA,NA
+"36","cigna","CPT",99283,0,"Montefiore Medical Center","both",2,301.08,NA,NA,NA,NA,NA,NA,NA,NA
+"37","cigna","CPT",99283,0,"Montefiore Medical Center","outpatient",1,1797,NA,NA,NA,NA,NA,NA,NA,NA
+"38","cigna","CPT",99283,0,"NYU Langone","both",28,2102.05,NA,NA,NA,NA,NA,NA,NA,NA
+"39","cigna","CPT",99283,1,"Montefiore Medical Center",NA,NA,NA,2,1902,2111,2320,2529,2738,NA,NA
+"40","cigna","CPT",99283,1,"The Mount Sinai Hospital",NA,NA,NA,2,1902,2111,2320,2529,2738,NA,NA
+"41","cigna","CPT",99283,1,"NYU Langone","both",6,2738,2,1902,2111,2320,2529,2738,418,0.152666179693207
+"42","cigna","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,44909.82,NA,NA,NA,NA,NA,NA,NA,NA
+"43","cigna","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,25906.6,NA,NA,NA,NA,NA,NA,NA,NA
+"44","cigna","MS-DRG",872,0,"NYU Langone","inpatient",14,24149.58,NA,NA,NA,NA,NA,NA,NA,NA
+"45","cigna","MS-DRG",872,1,"Montefiore Medical Center",NA,NA,NA,4,18106.15,23977.4125,27920.875,34324.0525,47574.46,NA,NA
+"46","cigna","MS-DRG",872,1,"NYU Langone","inpatient",3,29907,4,18106.15,23977.4125,27920.875,34324.0525,47574.46,1986.125,0.0664100377837964
+"47","cigna","MS-DRG",872,1,"The Mount Sinai Hospital",NA,NA,NA,4,18106.15,23977.4125,27920.875,34324.0525,47574.46,NA,NA
+"48","cigna","LOCAL",43239,0,"NYU Langone","both",14,10932.22,NA,NA,NA,NA,NA,NA,NA,NA
+"49","cigna","LOCAL",43239,1,"NYU Langone","both",3,10932.22,NA,NA,NA,NA,NA,NA,NA,NA
+"50","oscar","CPT",43239,0,"Montefiore Medical Center","outpatient",3,1037.65,NA,NA,NA,NA,NA,NA,NA,NA
+"51","oscar","CPT",43239,0,"Montefiore Medical Center","both",4,157.52,NA,NA,NA,NA,NA,NA,NA,NA
+"52","oscar","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,2514,NA,NA,NA,NA,NA,NA,NA,NA
+"53","oscar","CPT",99283,0,"Montefiore Medical Center","outpatient",1,326.61,NA,NA,NA,NA,NA,NA,NA,NA
+"54","oscar","CPT",99283,0,"Montefiore Medical Center","both",2,79.79,NA,NA,NA,NA,NA,NA,NA,NA
+"55","oscar","MS-DRG",872,0,"Montefiore Medical Center","inpatient",2,13570,NA,NA,NA,NA,NA,NA,NA,NA
+"56","oscar","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",2,18604.11,NA,NA,NA,NA,NA,NA,NA,NA
+"57","healthcare","CPT",43239,0,"Montefiore Medical Center","both",2,176.42,NA,NA,NA,NA,NA,NA,NA,NA
+"58","healthcare","CPT",99283,0,"Montefiore Medical Center","both",1,89.36,NA,NA,NA,NA,NA,NA,NA,NA
+"59","united","CPT",43239,0,"Montefiore Medical Center","both",8,153.09,NA,NA,NA,NA,NA,NA,NA,NA
+"60","united","CPT",99283,0,"Montefiore Medical Center","both",4,79.74,NA,NA,NA,NA,NA,NA,NA,NA
+"61","united","MS-DRG",872,0,"Montefiore Medical Center","inpatient",3,13570,NA,NA,NA,NA,NA,NA,NA,NA
+"62","emblem","CPT",43239,0,"Montefiore Medical Center","outpatient",7,867.77,NA,NA,NA,NA,NA,NA,NA,NA
+"63","emblem","CPT",43239,0,"Montefiore Medical Center","both",12,166.97,NA,NA,NA,NA,NA,NA,NA,NA
+"64","emblem","CPT",99283,0,"Montefiore Medical Center","both",6,64.75,NA,NA,NA,NA,NA,NA,NA,NA
+"65","emblem","CPT",99283,0,"Montefiore Medical Center","outpatient",3,326.61,NA,NA,NA,NA,NA,NA,NA,NA
+"66","emblem","MS-DRG",872,0,"Montefiore Medical Center","inpatient",5,14248.5,NA,NA,NA,NA,NA,NA,NA,NA
+"67","emblem","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",5,13434.03,NA,NA,NA,NA,NA,NA,NA,NA
+"68","humana","CPT",43239,0,"Montefiore Medical Center","outpatient",1,1141.42,NA,NA,NA,NA,NA,NA,NA,NA
+"69","humana","CPT",43239,0,"Montefiore Medical Center","both",2,160.67,NA,NA,NA,NA,NA,NA,NA,NA
+"70","humana","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,1069.24,NA,NA,NA,NA,NA,NA,NA,NA
+"71","humana","CPT",99283,0,"Montefiore Medical Center","outpatient",1,359.27,NA,NA,NA,NA,NA,NA,NA,NA
+"72","humana","CPT",99283,0,"Montefiore Medical Center","both",1,81.39,NA,NA,NA,NA,NA,NA,NA,NA
+"73","humana","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,336.55,NA,NA,NA,NA,NA,NA,NA,NA
+"74","humana","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,13977.1,NA,NA,NA,NA,NA,NA,NA,NA
+"75","humana","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"76","fidelis","CPT",43239,0,"Montefiore Medical Center","both",8,157.52,NA,NA,NA,NA,NA,NA,NA,NA
+"77","fidelis","CPT",43239,0,"Montefiore Medical Center","outpatient",11,867.77,NA,NA,NA,NA,NA,NA,NA,NA
+"78","fidelis","CPT",43239,0,"NYU Langone","both",38,1290.19,NA,NA,NA,NA,NA,NA,NA,NA
+"79","fidelis","CPT",99283,0,"Montefiore Medical Center","both",4,79.79,NA,NA,NA,NA,NA,NA,NA,NA
+"80","fidelis","CPT",99283,0,"Montefiore Medical Center","outpatient",6,326.61,NA,NA,NA,NA,NA,NA,NA,NA
+"81","fidelis","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,13570,NA,NA,NA,NA,NA,NA,NA,NA
+"82","fidelis","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"83","fidelis","LOCAL",43239,0,"NYU Langone","both",19,3611.24,NA,NA,NA,NA,NA,NA,NA,NA
+"84","centerlight","CPT",43239,0,"Montefiore Medical Center","outpatient",2,1063.59,NA,NA,NA,NA,NA,NA,NA,NA
+"85","centerlight","CPT",43239,0,"Montefiore Medical Center","both",2,167.1,NA,NA,NA,NA,NA,NA,NA,NA
+"86","centerlight","CPT",43239,0,"NYU Langone","both",8,1058.39,NA,NA,NA,NA,NA,NA,NA,NA
+"87","centerlight","CPT",99283,0,"Montefiore Medical Center","outpatient",2,334.78,NA,NA,NA,NA,NA,NA,NA,NA
+"88","centerlight","CPT",99283,0,"Montefiore Medical Center","both",1,84.64,NA,NA,NA,NA,NA,NA,NA,NA
+"89","centerlight","CPT",99283,0,"NYU Langone","both",8,333.13,NA,NA,NA,NA,NA,NA,NA,NA
+"90","centerlight","MS-DRG",872,0,"Montefiore Medical Center","inpatient",2,13909.25,NA,NA,NA,NA,NA,NA,NA,NA
+"91","centerlight","MS-DRG",872,0,"NYU Langone","inpatient",4,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"92","centerlight","LOCAL",43239,0,"NYU Langone","both",4,8207.38,NA,NA,NA,NA,NA,NA,NA,NA
+"93","partners","CPT",43239,0,"Montefiore Medical Center","outpatient",4,165.4,NA,NA,NA,NA,NA,NA,NA,NA
+"94","partners","CPT",99283,0,"Montefiore Medical Center","outpatient",2,83.78,NA,NA,NA,NA,NA,NA,NA,NA
+"95","northwell","CPT",43239,0,"Montefiore Medical Center","outpatient",1,3206.34,NA,NA,NA,NA,NA,NA,NA,NA
+"96","northwell","CPT",99283,0,"Montefiore Medical Center","outpatient",1,1009.22,NA,NA,NA,NA,NA,NA,NA,NA
+"97","northwell","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,62300.71,NA,NA,NA,NA,NA,NA,NA,NA
+"98","agewell","CPT",43239,0,"Montefiore Medical Center","outpatient",1,1089.53,NA,NA,NA,NA,NA,NA,NA,NA
+"99","agewell","CPT",43239,0,"Montefiore Medical Center","both",2,189.81,NA,NA,NA,NA,NA,NA,NA,NA
+"100","agewell","CPT",99283,0,"Montefiore Medical Center","both",1,79.29,NA,NA,NA,NA,NA,NA,NA,NA
+"101","agewell","CPT",99283,0,"Montefiore Medical Center","outpatient",1,342.94,NA,NA,NA,NA,NA,NA,NA,NA
+"102","agewell","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,14927,NA,NA,NA,NA,NA,NA,NA,NA
+"103","metroplus","CPT",43239,0,"Montefiore Medical Center","outpatient",29,157.52,NA,NA,NA,NA,NA,NA,NA,NA
+"104","metroplus","CPT",43239,0,"Montefiore Medical Center","both",8,153.45,NA,NA,NA,NA,NA,NA,NA,NA
+"105","metroplus","CPT",43239,0,"The Mount Sinai Hospital","outpatient",4,1048.28,NA,NA,NA,NA,NA,NA,NA,NA
+"106","metroplus","CPT",99283,0,"Montefiore Medical Center","outpatient",22,79.79,NA,NA,NA,NA,NA,NA,NA,NA
+"107","metroplus","CPT",99283,0,"Montefiore Medical Center","both",4,78,NA,NA,NA,NA,NA,NA,NA,NA
+"108","metroplus","CPT",99283,0,"The Mount Sinai Hospital","outpatient",6,329.95,NA,NA,NA,NA,NA,NA,NA,NA
+"109","metroplus","MS-DRG",872,0,"Montefiore Medical Center","inpatient",4,13570,NA,NA,NA,NA,NA,NA,NA,NA
+"110","metroplus","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",2,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"111","metroplus","MS-DRG",872,0,"NYU Langone","inpatient",1,35410.93,NA,NA,NA,NA,NA,NA,NA,NA
+"112","longevity","CPT",43239,0,"Montefiore Medical Center","outpatient",1,1131.04,NA,NA,NA,NA,NA,NA,NA,NA
+"113","longevity","CPT",99283,0,"Montefiore Medical Center","outpatient",1,356,NA,NA,NA,NA,NA,NA,NA,NA
+"114","longevity","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,14791.3,NA,NA,NA,NA,NA,NA,NA,NA
+"115","mvp","CPT",43239,0,"Montefiore Medical Center","both",4,162.56,NA,NA,NA,NA,NA,NA,NA,NA
+"116","mvp","CPT",43239,0,"Montefiore Medical Center","outpatient",3,867.77,NA,NA,NA,NA,NA,NA,NA,NA
+"117","mvp","CPT",99283,0,"Montefiore Medical Center","both",2,82.34,NA,NA,NA,NA,NA,NA,NA,NA
+"118","hamaspik","CPT",43239,0,"Montefiore Medical Center","outpatient",1,1120.66,NA,NA,NA,NA,NA,NA,NA,NA
+"119","hamaspik","CPT",99283,0,"Montefiore Medical Center","outpatient",1,352.74,NA,NA,NA,NA,NA,NA,NA,NA
+"120","hamaspik","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,14927,NA,NA,NA,NA,NA,NA,NA,NA
+"121","wellcare","CPT",43239,0,"Montefiore Medical Center","both",8,157.52,NA,NA,NA,NA,NA,NA,NA,NA
+"122","wellcare","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,1079.73,NA,NA,NA,NA,NA,NA,NA,NA
+"123","wellcare","CPT",43239,0,"NYU Langone","both",2,1037.64,NA,NA,NA,NA,NA,NA,NA,NA
+"124","wellcare","CPT",99283,0,"Montefiore Medical Center","both",4,79.79,NA,NA,NA,NA,NA,NA,NA,NA
+"125","wellcare","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,339.85,NA,NA,NA,NA,NA,NA,NA,NA
+"126","wellcare","CPT",99283,0,"NYU Langone","both",2,326.6,NA,NA,NA,NA,NA,NA,NA,NA
+"127","wellcare","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,13570,NA,NA,NA,NA,NA,NA,NA,NA
+"128","wellcare","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,14393.61,NA,NA,NA,NA,NA,NA,NA,NA
+"129","wellcare","MS-DRG",872,0,"NYU Langone","inpatient",1,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"130","wellcare","LOCAL",43239,0,"NYU Langone","both",1,3611.24,NA,NA,NA,NA,NA,NA,NA,NA
+"131","empire","CPT",43239,0,"Montefiore Medical Center","both",16,153.45,NA,NA,NA,NA,NA,NA,NA,NA
+"132","empire","CPT",43239,0,"Montefiore Medical Center","outpatient",7,1037.65,NA,NA,NA,NA,NA,NA,NA,NA
+"133","empire","CPT",43239,0,"The Mount Sinai Hospital","outpatient",8,2718.13,NA,NA,NA,NA,NA,NA,NA,NA
+"134","empire","CPT",99283,0,"Montefiore Medical Center","outpatient",1,326.61,NA,NA,NA,NA,NA,NA,NA,NA
+"135","empire","CPT",99283,0,"Montefiore Medical Center","both",7,78,NA,NA,NA,NA,NA,NA,NA,NA
+"136","empire","MS-DRG",872,0,"Montefiore Medical Center","inpatient",3,4296.35,NA,NA,NA,NA,NA,NA,NA,NA
+"137","empire","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",8,23801.07,NA,NA,NA,NA,NA,NA,NA,NA
+"138","elderplan","CPT",43239,0,"Montefiore Medical Center","both",2,170.33,NA,NA,NA,NA,NA,NA,NA,NA
+"139","elderplan","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,1048.28,NA,NA,NA,NA,NA,NA,NA,NA
+"140","elderplan","CPT",99283,0,"Montefiore Medical Center","both",1,86.58,NA,NA,NA,NA,NA,NA,NA,NA
+"141","elderplan","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,329.95,NA,NA,NA,NA,NA,NA,NA,NA
+"142","elderplan","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,13977.1,NA,NA,NA,NA,NA,NA,NA,NA
+"143","elderplan","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"144","vnsny","CPT",43239,0,"Montefiore Medical Center","outpatient",3,527.57,NA,NA,NA,NA,NA,NA,NA,NA
+"145","vnsny","CPT",43239,0,"Montefiore Medical Center","both",4,168.55,NA,NA,NA,NA,NA,NA,NA,NA
+"146","vnsny","CPT",99283,0,"Montefiore Medical Center","outpatient",2,95.75,NA,NA,NA,NA,NA,NA,NA,NA
+"147","vnsny","CPT",99283,0,"Montefiore Medical Center","both",2,85.38,NA,NA,NA,NA,NA,NA,NA,NA
+"148","vnsny","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,14248.5,NA,NA,NA,NA,NA,NA,NA,NA
+"149","nat","CPT",43239,0,"Montefiore Medical Center","outpatient",1,5954,NA,NA,NA,NA,NA,NA,NA,NA
+"150","nat","CPT",99283,0,"Montefiore Medical Center","outpatient",1,1797,NA,NA,NA,NA,NA,NA,NA,NA
+"151","nat","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,44909.82,NA,NA,NA,NA,NA,NA,NA,NA
+"152","centersplan","CPT",43239,0,"Montefiore Medical Center","both",2,179.54,NA,NA,NA,NA,NA,NA,NA,NA
+"153","centersplan","CPT",43239,0,"Montefiore Medical Center","outpatient",2,157.52,NA,NA,NA,NA,NA,NA,NA,NA
+"154","centersplan","CPT",99283,0,"Montefiore Medical Center","outpatient",2,79.79,NA,NA,NA,NA,NA,NA,NA,NA
+"155","centersplan","CPT",99283,0,"Montefiore Medical Center","both",1,91.26,NA,NA,NA,NA,NA,NA,NA,NA
+"156","centersplan","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,14927,NA,NA,NA,NA,NA,NA,NA,NA
+"157","uhc","CPT",43239,1,"Montefiore Medical Center","both",2,688.3,NA,NA,NA,NA,NA,NA,NA,NA
+"158","uhc","CPT",99283,1,"Montefiore Medical Center","both",1,211.16,NA,NA,NA,NA,NA,NA,NA,NA
+"159","uhc","MS-DRG",872,0,"NYU Langone","inpatient",12,24149.58,NA,NA,NA,NA,NA,NA,NA,NA
+"160","uhc","MS-DRG",872,1,"Montefiore Medical Center","inpatient",1,57020.41,NA,NA,NA,NA,NA,NA,NA,NA
+"161","villagecaremax","CPT",43239,0,"Montefiore Medical Center","outpatient",1,1037.65,NA,NA,NA,NA,NA,NA,NA,NA
+"162","villagecaremax","CPT",99283,0,"Montefiore Medical Center","outpatient",1,326.61,NA,NA,NA,NA,NA,NA,NA,NA
+"163","villagecaremax","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,13570,NA,NA,NA,NA,NA,NA,NA,NA
+"164","senior","CPT",43239,0,"Montefiore Medical Center","both",2,527.57,NA,NA,NA,NA,NA,NA,NA,NA
+"165","senior","CPT",99283,0,"Montefiore Medical Center","both",1,95.75,NA,NA,NA,NA,NA,NA,NA,NA
+"166","nippon","CPT",43239,0,"Montefiore Medical Center","outpatient",1,14836,NA,NA,NA,NA,NA,NA,NA,NA
+"167","nippon","CPT",99283,0,"Montefiore Medical Center","outpatient",1,421.18,NA,NA,NA,NA,NA,NA,NA,NA
+"168","nippon","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,51350.81,NA,NA,NA,NA,NA,NA,NA,NA
+"169","seiu1199","CPT",43239,0,"Montefiore Medical Center","both",2,174,NA,NA,NA,NA,NA,NA,NA,NA
+"170","seiu1199","CPT",43239,0,"Montefiore Medical Center","outpatient",2,174,NA,NA,NA,NA,NA,NA,NA,NA
+"171","seiu1199","CPT",99283,0,"Montefiore Medical Center","both",1,66,NA,NA,NA,NA,NA,NA,NA,NA
+"172","seiu1199","CPT",99283,0,"Montefiore Medical Center","outpatient",1,66,NA,NA,NA,NA,NA,NA,NA,NA
+"173","seiu1199","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,24034.78,NA,NA,NA,NA,NA,NA,NA,NA
+"174","molina","CPT",43239,0,"Montefiore Medical Center","both",4,180.22,NA,NA,NA,NA,NA,NA,NA,NA
+"175","molina","CPT",99283,0,"Montefiore Medical Center","both",2,68.82,NA,NA,NA,NA,NA,NA,NA,NA
+"176","molina","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,18726.6,NA,NA,NA,NA,NA,NA,NA,NA
+"177","multiplan","CPT",43239,0,"Montefiore Medical Center","both",2,460.5,NA,NA,NA,NA,NA,NA,NA,NA
+"178","multiplan","CPT",99283,0,"Montefiore Medical Center","both",1,235.96,NA,NA,NA,NA,NA,NA,NA,NA
+"179","multiplan","CPT",99283,0,"NYU Langone","both",92,1702.06,NA,NA,NA,NA,NA,NA,NA,NA
+"180","multiplan","MS-DRG",872,0,"NYU Langone","inpatient",46,68004.72,NA,NA,NA,NA,NA,NA,NA,NA
+"181","multiplan","LOCAL",43239,0,"NYU Langone","both",46,25607.01,NA,NA,NA,NA,NA,NA,NA,NA
+"182","magnacare","CPT",43239,0,"Montefiore Medical Center","both",2,597.61,NA,NA,NA,NA,NA,NA,NA,NA
+"183","magnacare","CPT",43239,0,"NYU Langone","both",20,1092.5,NA,NA,NA,NA,NA,NA,NA,NA
+"184","magnacare","CPT",99283,0,"Montefiore Medical Center","both",1,108.23,NA,NA,NA,NA,NA,NA,NA,NA
+"185","magnacare","MS-DRG",872,0,"NYU Langone","inpatient",9,42146.25,NA,NA,NA,NA,NA,NA,NA,NA
+"186","centivo","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,57084.61,NA,NA,NA,NA,NA,NA,NA,NA
+"187","centivo","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,23903.64,NA,NA,NA,NA,NA,NA,NA,NA
+"188","beacon","CPT",43239,0,"The Mount Sinai Hospital","outpatient",6,1048.28,NA,NA,NA,NA,NA,NA,NA,NA
+"189","beacon","CPT",99283,0,"The Mount Sinai Hospital","outpatient",9,329.95,NA,NA,NA,NA,NA,NA,NA,NA
+"190","beacon","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",3,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"191","unitedhealthcare","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,1048.28,NA,NA,NA,NA,NA,NA,NA,NA
+"192","unitedhealthcare","CPT",43239,1,"NYU Langone",NA,NA,NA,10,1532,3672.75,5110.5,6331,11677,NA,NA
+"193","unitedhealthcare","CPT",43239,1,"Montefiore Medical Center",NA,NA,NA,10,1532,3672.75,5110.5,6331,11677,NA,NA
+"194","unitedhealthcare","CPT",43239,1,"The Mount Sinai Hospital","outpatient",1,6438,10,1532,3672.75,5110.5,6331,11677,1327.5,0.206197576887232
+"195","unitedhealthcare","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,329.95,NA,NA,NA,NA,NA,NA,NA,NA
+"196","unitedhealthcare","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"197","unitedhealthcare","MS-DRG",872,1,"Montefiore Medical Center",NA,NA,NA,9,15461,15902,17424.93,27924.63,34416.84,NA,NA
+"198","unitedhealthcare","MS-DRG",872,1,"The Mount Sinai Hospital","inpatient",1,34190.62,9,15461,15902,17424.93,27924.63,34416.84,16765.69,0.490359344171004
+"199","unitedhealthcare","MS-DRG",872,1,"NYU Langone",NA,NA,NA,9,15461,15902,17424.93,27924.63,34416.84,NA,NA
+"200","brighthealth","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,968.08,NA,NA,NA,NA,NA,NA,NA,NA
+"201","brighthealth","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,304.71,NA,NA,NA,NA,NA,NA,NA,NA
+"202","brighthealth","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,12659.52,NA,NA,NA,NA,NA,NA,NA,NA
+"203","horizon","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",2,26484.27,NA,NA,NA,NA,NA,NA,NA,NA
+"204","amidacare","CPT",43239,0,"Montefiore Medical Center","both",2,490.1,NA,NA,NA,NA,NA,NA,NA,NA
+"205","amidacare","CPT",99283,0,"Montefiore Medical Center","both",1,83.77,NA,NA,NA,NA,NA,NA,NA,NA
+"206","oxford","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,1048.28,NA,NA,NA,NA,NA,NA,NA,NA
+"207","oxford","CPT",43239,1,"The Mount Sinai Hospital","outpatient",1,4681,NA,NA,NA,NA,NA,NA,NA,NA
+"208","oxford","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,329.95,NA,NA,NA,NA,NA,NA,NA,NA
+"209","oxford","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,13708.2,NA,NA,NA,NA,NA,NA,NA,NA
+"210","oxford","MS-DRG",872,0,"NYU Langone","inpatient",2,24492.44,NA,NA,NA,NA,NA,NA,NA,NA
+"211","oxford","MS-DRG",872,1,"The Mount Sinai Hospital","inpatient",1,32913.54,NA,NA,NA,NA,NA,NA,NA,NA
+"212","empiremedicareadvantage","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,1020.6,NA,NA,NA,NA,NA,NA,NA,NA
+"213","empiremedicareadvantage","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,321.24,NA,NA,NA,NA,NA,NA,NA,NA
+"214","empiremedicareadvantage","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,13346.3,NA,NA,NA,NA,NA,NA,NA,NA
+"215","independencecare","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,1153.11,NA,NA,NA,NA,NA,NA,NA,NA
+"216","independencecare","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,362.94,NA,NA,NA,NA,NA,NA,NA,NA
+"217","independencecare","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,15079.02,NA,NA,NA,NA,NA,NA,NA,NA
+"218","1199","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,174,NA,NA,NA,NA,NA,NA,NA,NA
+"219","1199","CPT",43239,0,"NYU Langone","both",6,1248.57,NA,NA,NA,NA,NA,NA,NA,NA
+"220","1199","CPT",99283,0,"NYU Langone","both",6,654.64,NA,NA,NA,NA,NA,NA,NA,NA
+"221","1199","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,21238.6,NA,NA,NA,NA,NA,NA,NA,NA
+"222","1199","MS-DRG",872,0,"NYU Langone","inpatient",2,31739.33,NA,NA,NA,NA,NA,NA,NA,NA
+"223","bcbs","CPT",43239,1,"NYU Langone","both",4,7334,NA,NA,NA,NA,NA,NA,NA,NA
+"224","bcbs","CPT",99283,1,"NYU Langone","both",4,5228,NA,NA,NA,NA,NA,NA,NA,NA
+"225","bcbs","MS-DRG",872,0,"NYU Langone","inpatient",38,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"226","bcbs","MS-DRG",872,1,"NYU Langone","inpatient",2,39345.48,NA,NA,NA,NA,NA,NA,NA,NA
+"227","bcbs","LOCAL",43239,1,"NYU Langone","both",2,2462.21,NA,NA,NA,NA,NA,NA,NA,NA
+"228","medicare","MS-DRG",872,0,"NYU Langone","inpatient",53,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"229","somos","CPT",43239,0,"NYU Langone","both",28,1037.64,NA,NA,NA,NA,NA,NA,NA,NA
+"230","somos","MS-DRG",872,0,"NYU Langone","inpatient",9,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"231","healthplus","CPT",43239,0,"NYU Langone","both",30,984.04,NA,NA,NA,NA,NA,NA,NA,NA
+"232","healthplus","MS-DRG",872,0,"NYU Langone","inpatient",1,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"233","ghi","CPT",43239,0,"NYU Langone","both",28,1037.64,NA,NA,NA,NA,NA,NA,NA,NA
+"234","ghi","CPT",99283,0,"NYU Langone","both",28,326.6,NA,NA,NA,NA,NA,NA,NA,NA
+"235","ghi","MS-DRG",872,0,"NYU Langone","inpatient",13,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"236","amida","CPT",43239,0,"NYU Langone","both",2,1040.48,NA,NA,NA,NA,NA,NA,NA,NA
+"237","firsthealth","CPT",99283,0,"NYU Langone","both",4,1832.99,NA,NA,NA,NA,NA,NA,NA,NA
+"238","firsthealth","MS-DRG",872,0,"NYU Langone","inpatient",2,78252.01,NA,NA,NA,NA,NA,NA,NA,NA
+"239","firsthealth","LOCAL",43239,0,"NYU Langone","both",2,27576.78,NA,NA,NA,NA,NA,NA,NA,NA
+"240","medicaid","CPT",43239,0,"NYU Langone","both",16,984.04,NA,NA,NA,NA,NA,NA,NA,NA
+"241","medicaid","MS-DRG",872,0,"NYU Langone","inpatient",2,10076.87,NA,NA,NA,NA,NA,NA,NA,NA
+"242","threerivers","CPT",99283,0,"NYU Langone","both",2,1963.92,NA,NA,NA,NA,NA,NA,NA,NA
+"243","threerivers","MS-DRG",872,0,"NYU Langone","inpatient",1,83841.44,NA,NA,NA,NA,NA,NA,NA,NA
+"244","threerivers","LOCAL",43239,0,"NYU Langone","both",1,29546.55,NA,NA,NA,NA,NA,NA,NA,NA
+"245","hamaspikchoice","CPT",43239,0,"NYU Langone","both",2,7822,NA,NA,NA,NA,NA,NA,NA,NA
+"246","hamaspikchoice","CPT",99283,0,"NYU Langone","both",2,2560,NA,NA,NA,NA,NA,NA,NA,NA
+"247","hamaspikchoice","MS-DRG",872,0,"NYU Langone","inpatient",1,28411.27,NA,NA,NA,NA,NA,NA,NA,NA
+"248","hamaspikchoice","LOCAL",43239,0,"NYU Langone","both",1,13788.39,NA,NA,NA,NA,NA,NA,NA,NA
+"249","archcare","CPT",43239,0,"Montefiore Medical Center","both",2,189.9,NA,NA,NA,NA,NA,NA,NA,NA
+"250","archcare","CPT",99283,0,"Montefiore Medical Center","both",1,79.38,NA,NA,NA,NA,NA,NA,NA,NA
+"251","christian","CPT",43239,0,"Montefiore Medical Center","outpatient",1,14836,NA,NA,NA,NA,NA,NA,NA,NA
+"252","christian","CPT",99283,0,"Montefiore Medical Center","outpatient",1,421.18,NA,NA,NA,NA,NA,NA,NA,NA
+"253","christian","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,51350.81,NA,NA,NA,NA,NA,NA,NA,NA
+"254","american","MS-DRG",872,0,"Montefiore Medical Center","inpatient",1,57020.41,NA,NA,NA,NA,NA,NA,NA,NA
+"255","brightonhealth","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,38357.42,NA,NA,NA,NA,NA,NA,NA,NA
+"256","empirehealthplus","CPT",43239,0,"The Mount Sinai Hospital","outpatient",2,153.45,NA,NA,NA,NA,NA,NA,NA,NA
+"257","empirehealthplus","CPT",99283,0,"The Mount Sinai Hospital","outpatient",3,78,NA,NA,NA,NA,NA,NA,NA,NA
+"258","vns","CPT",43239,0,"The Mount Sinai Hospital","outpatient",1,1058.76,NA,NA,NA,NA,NA,NA,NA,NA
+"259","vns","MS-DRG",872,0,"The Mount Sinai Hospital","inpatient",1,13708.2,NA,NA,NA,NA,NA,NA,NA,NA

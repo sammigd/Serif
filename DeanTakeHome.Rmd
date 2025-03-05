@@ -1,0 +1,178 @@
+---
+title: "Serif Health Data Science Take Home"
+author: 'Samantha Dean'
+output: html_document
+date: "2025-03-05"
+---
+
+```{r setup, include=FALSE, warning=F}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse) #for data wrangling
+```
+
+## Workflow
+- Spend some time looking into the data, making sure I understand the variables
+- Check for and correct data QC issues that will cause issues with merging
+- Exploratory analysis to understand how the two data sets fit together
+- Construct merged dataset
+- Write up
+
+## Import Data
+```{r import}
+hpt = read.csv('rawdata/hpt_extract_20250213.csv')
+tic = read.csv('rawdata/tic_extract_20250213.csv')
+```
+
+## Exploratory analysis and cleaning
+I started with some exploratory analysis and recognized that making a data dictionary
+at the start would save me time as I worked on this. I did some google-ing and made 
+some quick tables of different columns to make sure I understood what all of the variables 
+meant. The rough data dictionary is in the git repo. Through this process I identified 
+some data abnormalities - namely that missing values were reading in as strings, 
+payer names were formatted differently in each data set, and there were some incorrectly 
+formatted codes. I made these fixes. When making fixes, I tried to make changes as general 
+as possible, so that they could fix similar mistakes in future data deliveries.
+```{r cleaning}
+clean_hpt = hpt %>% 
+  mutate(across(source_file_name:additional_generic_notes, ~ifelse(.=='null', NA, .)),                     # change nulls to NA
+         across(standard_charge_gross:standard_charge_max, as.numeric),                                    # make rates numeric
+         raw_code = as.integer(str_remove_all(hpt$raw_code, '[^0-9.]')),                                   # remove non numeric characters from codes
+         clean_payer_name = str_to_lower(str_remove_all(str_remove_all(payer_name,"[ -]"), 'corporation')) # strip payer name formatting for easier matching
+         )
+
+clean_tic = tic %>%
+  mutate(across(payer:cms_baseline_rate, ~ifelse(.=='null', NA, .)),
+         across(c(rate, cms_baseline_rate), as.numeric),
+         clean_payer_name = str_to_lower(str_remove_all(str_remove_all(payer,"[ -]"), 'corporation')))
+
+```
+
+## Formatting HPT data
+I noticed that while all of the plans in the TIC dataset were open choice plans (ie 
+included in and out of network providers), the HPT dataset included numerous other 
+plan types. I wanted to make sure I compared rates with the same plan type across the 
+two datasets, so I added in an indicator for the open choice plans in the HPT data. 
+Then, I aggregated to the hospital / payer / code type / code / care setting / open 
+indicator level. I observed that at this level of aggregation, even if there were 
+multiple observations, rates were constant within HPT.
+
+```{r hpt}
+clean_hpt = clean_hpt %>% 
+  mutate(open_plan = ifelse(str_detect(plan_name, 'open') | str_detect(str_to_lower(plan_name), 'all payer'), 1, 0))
+
+# aggregate hpt to hospital / payer / code / setting level
+agg_hpt = clean_hpt %>% 
+  group_by(hospital_name, clean_payer_name, code_type, raw_code, setting, open_plan) %>% 
+  summarise(hpt_count = n(), hpt_min = min(standard_charge_negotiated_dollar), hpt_max = max(standard_charge_negotiated_dollar))
+
+```
+
+## Formatting the TIC data
+I extracted information from the cms_baseline_schedule variable to approximate the 
+setting variable in the HPT dataset, by grouping into inpatient and outpatient. I 
+excluded rows for non facility provider fees, because all of our hospital expenses 
+explicitly are linked to a facility. This is an assumption I could check more closely with more time. 
+
+Then I aggregated TIC data to the payer / code type / code / setting level. In this 
+dataset, at this level there was a lot of variation still in observed prices. I produced 
+summary statistics showing the min, q1, median, q3, and max rate values observed at this 
+level. I am considering the TIC data to enumerate a distribution from which the HPT rate
+can be considered a single drawn observation. 
+```{r tic}
+clean_tic = clean_tic %>%
+  mutate(setting = case_when(cms_baseline_schedule == 'IPPS' ~ 'inpatient',
+                             cms_baseline_schedule == 'OPPS' ~ 'outpatient',
+                             str_detect(cms_baseline_schedule, 'PFS_FACILITY') ~ 'in facility provider fee',
+                             str_detect(cms_baseline_schedule, 'PFS_NONFACILITY') ~ 'non facility provider fee')) %>%
+  filter(setting != 'non facility provider fee') #because all the charges came from facilities in hpt
+
+agg_tic = clean_tic %>% 
+  group_by(clean_payer_name,code_type, code, setting) %>% 
+  summarise(tic_count = n(), 
+            tic_min = min(rate), 
+            tic_q1 = quantile(rate, .25),
+            tic_q2 = quantile(rate,.5),
+            tic_q3 = quantile(rate,.75),
+            tic_max = max(rate)) %>%
+  ungroup(setting) %>%
+  summarise(open_plan = 1, across(tic_count:tic_max, sum))
+```
+
+## Combine data sets
+Now that I have both data sets aggregated to at least a payer / code type / code / setting 
+level, I want to combine them. I produce two output products: one with all rows that include
+pricing information from at least one of the source datasets, and one only with rows that 
+include information from both TIC and HPT datasets. 
+```{r merge}
+# make empty data frame with the combinations of hospitals, codes, payer
+id_cols = c('hospital_name', 'clean_payer_name', 'code_type', 'raw_code', 'open_plan')
+
+full = expand.grid(unique(clean_hpt$hospital_name), 
+                   unique(clean_hpt$clean_payer_name), 
+                   unique(clean_hpt$code_type), 
+                   unique(clean_hpt$raw_code),
+                   0:1)
+names(full) <- id_cols
+  
+full = full %>%
+  merge(agg_hpt, by = id_cols, all = T) %>% 
+  mutate(hpt_rate = hpt_min) %>%
+  select(-hpt_min, -hpt_max) %>%
+  merge(agg_tic, by.x = c(id_cols[-1]), by.y = c('clean_payer_name', 'code_type', 'code', 'open_plan'), all = T) %>%
+  mutate(delta = hpt_rate - tic_q2,
+         delta_pct = delta / hpt_rate)
+
+# remove rows where there is no pricing information from either data set
+full = full %>%
+  filter(!(is.na(hpt_rate) & is.na(tic_q2)))
+write.csv(full, 'outputdata/output_all.csv')
+
+write.csv(full %>% filter(!(is.na(hpt_rate) | is.na(tic_q2))), 'outputdata/output_overlap.csv')
+
+```
+
+I identified 8 (out of a possible 36) unique hospital / code type / code / payer 
+combinations that map closely between the TIC and the HPT dataset. At this level, 
+the HPT dataset has a single, consistent rate repeated across multiple observations. 
+The TIC data set has a larger number of observations, with a distribution of values 
+at this level. I elected to present the single rate from the HPT dataset, and contextualize 
+it with the min, max, and quartile values of the same aggregated level in the TIC data 
+set. This approach can build trust through transparency and gives useful information on 
+where a particular hospital's charge stands relative to the distribution of charges from 
+other hospitals / claims. I also provided a delta column, calculating the difference 
+between the consolidated HPT payment rate and the median rate from the corresponding 
+TIC rates. The delta_pct column shows the percent change (/100) between the HPT and median 
+TIC rates, and can be used as a measure of agreement between the two. 
+
+
+## Assumptions and challenges
+- I assumed that, within each payer, all the open access plans in HPT are the same 
+thing, even with slightly different names. I checked that the rates were constant 
+across the plan names, so this seems like a fine assunmption
+- A tricky problem for me was how to reconcile the Setting variable (Inpatient / 
+Outpatient / Both) from HIC with the CMS_Baseline_Schedule categories in the TIC 
+data. I want to be sure I am mapping inpatient costs to inpatient costs and comparing
+apples to apples, but not all observations were clearly categorized into inpatient / 
+outpatient, especially for the TIC data. I made the assumption that provider fees 
+were stacked on top of fees that were explicitly inpatient or outpatient in TIC, 
+when both were within a single code type (eg CPT). 
+- In the HPT notes fields, there was text that I could have scraped about the fee 
+systems. I did not have time to work with the text fields, but specifically the 
+"per diem" flag here could have been useful to consider for rates were not comparable 
+to TIC rates. 
+- I assumed that TIC data from open choice plans wouldn't be comparable to other 
+kinds of plans in the HPT data. However, I would need to do some more research on 
+insurance rates to check if this is an overly conservative assumption.
+- I wasn't able to directly map the TIC data to individual hospitals. Maybe there 
+is information available there where I could approximate which row of in TIC comes 
+from which hospital, or even comes from a "similar" hospital. Since I couldnt be sure, 
+I thought it made more sense to be straightforward that I am mapping a distribution 
+from TIC to a single hospital in HPT. The ultimate goal, however, would be to make 
+the "distribution" from TIC that I am comparing the HPT data to as specific as possible, 
+so that I am only comparing within very similar strata.
+- In this data extract, I didn't have to worry too much about run time. However, 
+with the much larger full datasets, this could become a major consideration. Things 
+like text field searching and other algorithmic processes can take a long time to 
+run. With more time, I would optimize my approach for speed. 
+
+

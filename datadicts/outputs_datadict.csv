@@ -1,0 +1,17 @@
+Variable Name,Description
+clean_payer_name,"Payer names, stripped of spacing, special words, and other symbols"
+code_type,"insurance billing code type, either CPT or MS-DRG"
+raw_code,"billing code number, for a specific service"
+open_plan,indicator for whether a plan is open choice (covers in and out of network)
+hospital_name,hospital level identifier
+setting,"care setting (inpatient, outpatient, both)"
+hpt_count,number of observations at the aggregated level in hpt data
+hpt_rate,negotiated rate service cost in hpt
+tic_count,number of observations at the aggregated level in tic data
+tic_min,minimum rate of the tic_count observed rates in tic
+tic_q1,quartile 1 rate of the tic_count observed rates in tic
+tic_q2,quartile 2 rate of the tic_count observed rates in tic
+tic_q3,quartile 3 rate of the tic_count observed rates in tic
+tic_max,maximum rate of the tic_count observed rates in tic
+delta,difference between hpt_rate and tic_q2
+delta_pct,"difference between hpt_rate and tic_q2, as proportion of hpt_rate"

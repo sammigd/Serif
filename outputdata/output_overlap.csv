@@ -1,0 +1,9 @@
+"","clean_payer_name","code_type","raw_code","open_plan","hospital_name","setting","hpt_count","hpt_rate","tic_count","tic_min","tic_q1","tic_q2","tic_q3","tic_max","delta","delta_pct"
+"1","aetna","CPT",43239,1,"NYU Langone","both",4,8124.66,42,1914.43,5135.16,7220.29,11838.005,27166,904.37,0.11131173489106
+"2","aetna","CPT",99283,1,"NYU Langone","both",4,2490,4,2560,3583.5,4607,4793.5,4980,-2117,-0.850200803212851
+"3","aetna","MS-DRG",872,1,"NYU Langone","inpatient",2,25883.26,6,8757,10245.75,13365,16815.75,17966,12518.26,0.48364309596241
+"4","cigna","CPT",43239,1,"NYU Langone","both",6,6034,4,164,168.6575,170.21,193.9525,265.18,5863.79,0.971791514749751
+"5","cigna","CPT",99283,1,"NYU Langone","both",6,2738,2,1902,2111,2320,2529,2738,418,0.152666179693207
+"6","cigna","MS-DRG",872,1,"NYU Langone","inpatient",3,29907,4,18106.15,23977.4125,27920.875,34324.0525,47574.46,1986.125,0.0664100377837964
+"7","unitedhealthcare","CPT",43239,1,"The Mount Sinai Hospital","outpatient",1,6438,10,1532,3672.75,5110.5,6331,11677,1327.5,0.206197576887232
+"8","unitedhealthcare","MS-DRG",872,1,"The Mount Sinai Hospital","inpatient",1,34190.62,9,15461,15902,17424.93,27924.63,34416.84,16765.69,0.490359344171004

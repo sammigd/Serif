@@ -1,0 +1,21 @@
+Variable Name,Description,Possible Values
+source_file_name,hospital level csv name,
+hospital_id,hospital level id,
+hospital_name,hospital level name,
+last_updated_on,date,2024-07-01; 2024-09-16; 2025-01-01; constant for each hospital
+hospital_state,hospital state,all NY
+license_number,hospital level license id,
+payer_name,insurance payer,
+plan_name,insurance plan name,this roughly maps to TIC network_name
+code_type,code category,"CPT, LOCAL, or MS_DRG, maps to code type in TIC"
+raw_code,billing code for service provided,
+description,text field of visit description,"eg biopsy, ED visit"
+setting,care setting,"inpatient, outpatient, both"
+standard_charge_discounted_cash,cost for patients paying cash ,
+standard_charge_negotiated_dollar,negotiated rate for specific payer,
+standard_charge_negotiated_percentage,,
+standard_charge_min,lowest negotiated rate the hospital offers with any payer,
+standard_charge_max,highest negotiated rate the hosptial offers with any payer,
+standard_charge_methodology,,"fee schedule, case rate"
+additional_payer_notes,text field. describes partial payments by percentage. specifies if medicare,
+additional_generic_notes,,per test / per unit / per visit / per price

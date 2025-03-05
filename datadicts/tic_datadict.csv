@@ -1,0 +1,18 @@
+Variable Name,Description,Notes on values
+payer,insurance company,
+network_name,insurance plan,"one option per payer, all allow in and out of network providers"
+network_id,unique id for payer,
+network_year_month,date,always 202501
+network_region,country,always USA
+code,billing code for service provided,
+code_type,code category,either CPT (code for a specific medical procedure) or MS-DRG (code for inpatient hospital stay)
+ein,employer identification number,this is an identifier at the insurance group level
+taxonomy_filtered_npi_list,list of codes for provider type,
+modifier_list,codes giving additional information about procedure add ons,only null or 95 GT (telehealth)
+billing_class,code for if billing is for a physician service or a hospital level service,either institutional or professional. does not map exactly to billing code type
+place_of_service_list,code for location service provided,01: pharmacy; 02: telehealth; 03: school; etc
+negotiation_type,payment agreement between provider and payer,"fee schedule (in network), negotiated, or percentage (eg 150% of medicaid rate)"
+arrangement,fee for service  (versus PPO),all ffs
+rate,payment,
+cms_baseline_schedule,,PFS (physician fee schedule); OPPS (outpatient); IPPS (inpatient)
+cms_baseline_rate,cms payment,should be lower than standard rate
